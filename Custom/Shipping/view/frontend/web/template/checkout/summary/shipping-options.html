@@ -1,0 +1,11 @@
+<!-- ko if: shouldDisplay() -->
+<tr class="totals shipping-options">
+    <th class="mark" scope="row">
+    	<span class="label" data-bind="text: optionsTitle"></span>
+        <span class="value" data-bind="text: shippingLabel()"></span>
+    </th>
+    <td class="amount">
+        <span class="price" data-bind="text: value(), attr: {'data-th': optionsTitle}"></span>
+    </td>
+</tr>
+<!-- /ko -->

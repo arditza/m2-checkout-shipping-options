@@ -1,0 +1,12 @@
+<!-- ko if: shouldDisplay() -->
+<div class="extra-shipping-options">
+    <label class="label"><span data-bind="text: title"></span></label>
+	<div class="control" >
+        <select class="select" name="shipping_options" data-bind="
+	        options: shipping_options,
+	        optionsText: 'title',
+	        optionsValue: 'code'
+	    "></select>
+    </div>
+</div>
+<!-- /ko -->
