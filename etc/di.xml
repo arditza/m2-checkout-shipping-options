@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Magento\Checkout\Api\ShippingInformationManagementInterface" type="Azra\ShippingOptions\Model\ShippingInformationManagement" />
+	<!-- Fix payment method not displaying in order grid @MAGETWO-99111 -->
+	<preference for="Magento\Payment\Helper\Data" type="Azra\ShippingOptions\Helper\Data" />
+
+	<type name="Magento\Sales\Block\Order\Totals">
+        <plugin name="add_shipping_fee_to_order" type="Azra\ShippingOptions\Plugin\Order\AddShippingFeeToTotals"/>
+    </type>
+</config>
