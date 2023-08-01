@@ -1,11 +1,10 @@
 <?php
-/**
- * Copyright © MageWorx. All rights reserved.
- * See LICENSE.txt for license details.
- */
 
 namespace Azra\ShippingOptions\Model\Sales\Order\Invoice;
 
+/**
+ *
+ */
 class Discount extends \Magento\Sales\Model\Order\Invoice\Total\AbstractTotal {
 
 	/**

@@ -4,7 +4,7 @@ namespace Azra\ShippingOptions\Model\Total\Quote;
 
 /**
  * Class Custom
- * @package Meetanshi\HelloWorld\Model\Total\Quote
+ * @package Azra\ShippingOptions\Model\Total\Quote
  */
 class Custom extends \Magento\Quote\Model\Quote\Address\Total\AbstractTotal {
 

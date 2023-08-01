@@ -11,7 +11,7 @@ define([
 
     return Component.extend({
         defaults: {
-            template: 'Custom_Shipping/checkout/shipping/additional-block',
+            template: 'Azra_ShippingOptions/checkout/shipping/additional-block',
             shipping_options: shipping_options,
             title: shipping_options_title,
             ignored_shipping_methods: ignored_shipping_methods,

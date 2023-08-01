@@ -16,7 +16,7 @@ define(
 
         return Component.extend({
             defaults: {
-                template: 'Custom_Shipping/checkout/summary/shipping-options',
+                template: 'Azra_ShippingOptions/checkout/summary/shipping-options',
                 optionsTitle: shipping_options_title,
                 shipping_option_fee_code: shipping_option_fee_code,
                 shippingLabel: ko.observable(null),

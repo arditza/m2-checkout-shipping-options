@@ -2,7 +2,6 @@
 
 namespace Azra\ShippingOptions\Helper;
 
-
 /**
  *
  */

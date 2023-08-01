@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Azra\ShippingOptions\Setup;
 
 use Magento\Framework\Setup\ModuleDataSetupInterface;

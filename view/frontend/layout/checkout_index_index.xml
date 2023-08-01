@@ -14,7 +14,7 @@
                                                 <item name="totals" xsi:type="array">
                                                     <item name="children" xsi:type="array">
                                                         <item name="shipping-option" xsi:type="array">
-                                                            <item name="component"  xsi:type="string">Custom_Shipping/js/view/checkout/summary/shipping-options</item>
+                                                            <item name="component"  xsi:type="string">Azra_ShippingOptions/js/view/checkout/summary/shipping-options</item>
                                                             <item name="sortOrder" xsi:type="string">40</item>
                                                             <item name="config" xsi:type="array">
                                                                 <item name="title" xsi:type="string" translate="true">Shipping Options</item>
@@ -37,7 +37,7 @@
                                                             <item name="displayArea" xsi:type="string">shippingAdditional</item>
                                                             <item name="children" xsi:type="array">
                                                                 <item name="additional_block" xsi:type="array">
-                                                                    <item name="component" xsi:type="string">Custom_Shipping/js/view/checkout/shipping/additional-block</item>
+                                                                    <item name="component" xsi:type="string">Azra_ShippingOptions/js/view/checkout/shipping/additional-block</item>
                                                                 </item>
                                                             </item>
                                                         </item>

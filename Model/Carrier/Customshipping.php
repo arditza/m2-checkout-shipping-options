@@ -1,13 +1,13 @@
 <?php
 
-
 namespace Azra\ShippingOptions\Model\Carrier;
 
 use Magento\Quote\Model\Quote\Address\RateRequest;
+use Magento\Shipping\Model\Carrier\AbstractCarrier;
+use Magento\Shipping\Model\Carrier\CarrierInterface;
 use Magento\Shipping\Model\Rate\Result;
 
-class AzraShippingOptions extends \Magento\Shipping\Model\Carrier\AbstractCarrier implements
-    \Magento\Shipping\Model\Carrier\CarrierInterface
+class Customshipping extends AbstractCarrier implements CarrierInterface
 {
 
     protected $_code = 'customshipping';

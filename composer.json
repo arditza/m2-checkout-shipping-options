@@ -1,15 +1,16 @@
 {
     "name": "azra/module-shipping-options",
-    "description": "",
+    "description": "Shipping Options extension for magento 2",
     "type": "magento2-module",
     "license": "proprietary",
     "authors": [
         {
-            "email": "info@mage2gen.com",
+            "email": "ardit.zavalina23@gmail.com",
             "name": "Ardit Zavalina",
             "role": "Fullstack Magento Developer"
         }
     ],
+    "version": "1.0.2",
     "minimum-stability": "dev",
     "require": {},
     "autoload": {

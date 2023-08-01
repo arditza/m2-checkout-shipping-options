@@ -3,6 +3,7 @@
 namespace Azra\ShippingOptions\Model\Sales\Order\Creditmemo;
 
 use Azra\ShippingOptions\Model\Total\Quote\ShippingOption as ShippingOptionTotals;
+
 /**
  *
  */
