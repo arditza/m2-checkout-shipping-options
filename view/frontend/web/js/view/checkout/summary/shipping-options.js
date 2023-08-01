@@ -1,5 +1,3 @@
-/*jshint browser:true jquery:true*/
-/*global alert*/
 define(
     [
         'Magento_Checkout/js/view/summary/abstract-total',
@@ -11,14 +9,11 @@ define(
     function (Component, quote, totals, _, ko) {
         "use strict";
 
-        var shipping_options_title = window.checkoutConfig.shipping_options_title;
-        var shipping_option_fee_code = window.checkoutConfig.shipping_option_fee_code;
-
         return Component.extend({
             defaults: {
-                template: 'Custom_Shipping/checkout/summary/shipping-options',
-                optionsTitle: shipping_options_title,
-                shipping_option_fee_code: shipping_option_fee_code,
+                template: 'Azra_ShippingOptions/checkout/summary/shipping-options',
+                optionsTitle: window.checkoutConfig.shipping_options_title,
+                shipping_option_fee_code: window.checkoutConfig.shipping_option_fee_code,
                 shippingLabel: ko.observable(null),
                 value: ko.observable(0.0),
                 shouldDisplay: ko.observable(false)
@@ -46,12 +41,16 @@ define(
             },
 
             getShippingFee: function(totals){
+                let self = this;
+
                 if (typeof totals.total_segments === 'undefined' || !totals.total_segments instanceof Array) {
                     return false;
                 }
+
                 let shipping_option_segment = totals.total_segments.filter(function(segment){
-                    return segment.code == shipping_option_fee_code;
+                    return segment.code == self.shipping_option_fee_code;
                 });
+
                 if (shipping_option_segment instanceof Array && shipping_option_segment.length) {
                     return shipping_option_segment[0];
                 }

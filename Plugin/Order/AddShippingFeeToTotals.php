@@ -1,5 +1,6 @@
 <?php
 declare(strict_types = 1);
+
 namespace Azra\ShippingOptions\Plugin\Order;
 
 use Magento\Sales\Model\Order;

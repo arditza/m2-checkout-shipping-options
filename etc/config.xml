@@ -3,7 +3,7 @@
 	<default>
 		<carriers>
 			<customshipping>
-				<model>Azra\ShippingOptions\Model\Carrier\AzraShippingOptions</model>
+				<model>Azra\ShippingOptions\Model\Carrier\Customshipping</model>
 				<active>0</active>
 				<title>Store Pickup</title>
 				<name>Store Pickup</name>

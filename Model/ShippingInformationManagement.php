@@ -177,7 +177,7 @@ class ShippingInformationManagement implements \Magento\Checkout\Api\ShippingInf
             	$extendedPayloadData = $addressInformation->getExtensionAttributes()->__toArray();
 
                 $ignoredShippingMethods = $this->configHelper->getIgnoredShippingMethods();
-                $isValidShippingMethod  = strpos($ignoredShippingMethods, $carrierCode . '_' . $methodCode) === false;
+                $isValidShippingMethod  = strpos($ignoredShippingMethods ?? "", $carrierCode . '_' . $methodCode) === false;
 
             	if ( isset($extendedPayloadData["shipping_option_code"]) &&
                     !empty($extendedPayloadData["shipping_option_code"]) &&

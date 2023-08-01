@@ -55,7 +55,7 @@ class ShippingOptionsProvider implements ConfigProviderInterface
             'shipping_options' => $this->getShippingOptions(),
             'shipping_options_title' => $this->getShippingOptionsTitle(),
             'shipping_option_fee_code' => \Azra\ShippingOptions\Model\Total\Quote\ShippingOption::TOTAL_CODE,
-            'ignored_shipping_methods' => $this->_configHelper->getIgnoredShippingMethods($this->getStoreId())
+            'ignored_shipping_methods' => $this->_configHelper->getIgnoredShippingMethods($this->getStoreId()) ?? []
         ];
     }
 

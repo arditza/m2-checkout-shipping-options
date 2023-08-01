@@ -2,7 +2,6 @@
 
 namespace Azra\ShippingOptions\Helper;
 
-
 /**
  *
  */
@@ -69,6 +68,6 @@ class ConfigHelper extends \Magento\Framework\App\Helper\AbstractHelper
      */
     public function getIgnoredShippingMethods($storeId = null)
     {
-        return $this->getConfig(self::IGNORE_SHIPPING_METHODS,$storeId);
+        return $this->getConfig(self::IGNORE_SHIPPING_METHODS, $storeId);
     }
 }

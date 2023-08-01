@@ -5,6 +5,7 @@ define([
     'use strict';
 
     return function (payloadExtender) {
+
         return wrapper.wrap(payloadExtender, function (originalAction, payload) {
             payload = originalAction(payload);
 
